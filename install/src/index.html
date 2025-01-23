@@ -6,14 +6,23 @@
     <title>Tailwind CSS - Instalacion</title>
     <link rel="stylesheet" href="./output.css">
   </head>
-  <body class="m-0 p-0 flex justify-center items-center w-full h-screen ">
+  <body class="container m-0 p-0 flex justify-center items-center w-full h-screen ">
     <div class="text-start">
-      <h1 class="text-3xl font-bold underline text-emerald-500">Como instalar Tailwind CSS</h1>
+      <h1 class="text-3xl font-bold underline text-emerald-500">Como instalar Tailwind CSS CLI</h1>
+      <p class="text-emerald-50">Por favor ten en cuenta que estas usando la version CLI, que vendria siendo la que usamos en cualquier proyecto</p>
       <div class="ligatures-none overflow-auto bg-sky-950 rounded-lg overflow-hidden mt-10 inline-block px-10 py-5 inset-5 shadow-lg">
-        <p class="text-white"><span class="text-pink-600">&#x3E;</span> <span class="text-yellow-100">npm</span> install -D tailwindcss</p>
-        <p class="text-white"><span class="text-pink-600">&#x3E;</span> <span class="text-yellow-100">npx</span> tailwindcss init</p>
+        <p class="text-white"><span class="text-pink-600">&#x3E;</span> <span class="text-yellow-100">npm</span> install tailwindcss @tailwindcss/cli</p>
       </div><br><br>
-      <h3>Check your docs <a href="https://tailwindcss.com/docs/installation" class="text-emerald-500">Here</a></h3>
+      <p class="text-emerald-50">Importamos esta configuracion en el archivo main input.css</p>
+      <div class="ligatures-none overflow-auto bg-sky-950 rounded-lg overflow-hidden mt-10 inline-block px-10 py-5 inset-5 shadow-lg">
+        <p class="text-white"><span class="text-pink-600">&#x3E;</span> <span class="text-yellow-100">@import</span> "tailwindcss";</p>
+      </div><br><br>
+      <p class="text-emerald-50">El archivo main de ingreso es input, pero el archivo main de salida, es como tu lo quieras llamar, para el caso practico se usa output.css, pero puede tener cualquier nombre y puede estar redirigiendo a cualquier ruta que se le especifique</p>
+      <div class="ligatures-none overflow-auto bg-sky-950 rounded-lg overflow-hidden mt-10 inline-block px-10 py-5 inset-5 shadow-lg">
+        <p class="text-white"><span class="text-pink-600">&#x3E;</span> <span class="text-yellow-100">npx</span> tailwindcss -i ./src/input.css -o ./src/output.css --watch</p>
+      </div><br><br>
+      <p class="text-emerald-50">Finalmente llamas el archivo dentro del HTML y procedes con tu desarrollo</p>
+      <h3>Si esto no funciona, siempre recuerda verificar la documentacion del paso a paso de instalacion <a href="https://tailwindcss.com/docs/installation" class="text-emerald-500">aqui</a></h3>
     </div>
   </body>
 </html>
